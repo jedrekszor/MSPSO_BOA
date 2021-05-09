@@ -1,6 +1,7 @@
 import math
 import numpy as np
 
+swarms_number = 10
 population = 40
 dimensions = 20
 domain = 10
@@ -12,6 +13,7 @@ c2 = 2
 w_min = .4
 w_max = .9
 
+iterations = 300
 
 def calculate_value(coordinates):
     return sphere(coordinates)
