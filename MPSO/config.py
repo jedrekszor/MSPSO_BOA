@@ -14,6 +14,7 @@ w_min = .4
 w_max = .9
 
 iterations = 300
+shuffle_iterations = 100
 
 def calculate_value(coordinates):
     return sphere(coordinates)
