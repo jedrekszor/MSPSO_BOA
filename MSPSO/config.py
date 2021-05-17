@@ -1,8 +1,9 @@
 import math
 import numpy as np
+mark = "corana"
 
-swarms_number = 5
-population = 30
+swarms_number = 8
+population = 20
 dimensions = 20
 domain = 10
 
@@ -12,6 +13,13 @@ c2 = 2
 
 w_min = .4
 w_max = .9
+c1_init = 2
+c1_fin = 1
+c2_init = 1
+c2_fin = 2
+
+precision = 0.001
+is_precision = False
 
 iterations = 300
 

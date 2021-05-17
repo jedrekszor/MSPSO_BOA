@@ -2,27 +2,18 @@ import math
 import numpy as np
 mark = "corana"
 
-swarms_number = 5
-population = 20
+population = 35
 dimensions = 20
 domain = 10
+iterations = 300
 
-w = .7
-c1 = 2
-c2 = 2
-
-w_min = .4
-w_max = .9
-c1_init = 2
-c1_fin = 1
-c2_init = 1
-c2_fin = 2
+a_max = 1
+a = 0.5
+c = 0.5
+p = 0.3
 
 precision = 0.001
 is_precision = False
-
-iterations = 300
-shuffle_iterations = 150
 
 def calculate_value(coordinates):
     return sphere(coordinates)
@@ -30,8 +21,8 @@ def calculate_value(coordinates):
 
 def sphere(coordinates):
     total = 0
-    for c in coordinates:
-        total += pow(c, 2)
+    for i in coordinates:
+        total += pow(i, 2)
     return total
 
 
